@@ -65,6 +65,10 @@ public final class LotteryMachine {
 		return WinningLottery.of(lotteryNumbers, bonusLotteryBall);
 	}
 
+	public Result makeResult(final Lotteries lotteries, final WinningLottery winningLottery) {
+		return Result.makeResult(lotteries, winningLottery);
+	}
+
 	public int getNumOfManualLottery() {
 		return this.numOfLottery.getNumOfManualLottery();
 	}
